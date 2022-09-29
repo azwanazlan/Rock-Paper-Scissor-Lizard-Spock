@@ -66,98 +66,107 @@ namespace Game
 
                 if (shapeA == "r")
                 {
-                    if (shapeB == "p" || shapeB == "sp")
+                    switch (shapeB)
                     {
-                        Console.WriteLine("RESULT: PLAYER B GOT 1 POINT!");
-                        countB++;
-                    }
-                    else if (shapeB == "s" || shapeB == "l")
-                    {
-                        Console.WriteLine("RESULT: PLAYER A GOT 1 POINT!");
-                        countA++;
-                    }
-                    else
-                    {
-                        Console.WriteLine("RESULT: DRAW!");
-                    }
+                        case "p":
+                        case "sp":
+                            Console.WriteLine("RESULT: PLAYER B GOT 1 POINT!");
+                            countB++;
+                            break;
+                        case "s":
+                        case "l":
+                            Console.WriteLine("RESULT: PLAYER B GOT 1 POINT!");
+                            countA++;
+                            break;
+                        default:
+                            Console.WriteLine("RESULT: DRAW!");
+                            break;
+                     }
                 }
 
                 else if (shapeA == "p")
                 {
-                    if (shapeB == "s" || shapeB == "l")
+                     switch (shapeB)
                     {
-                        Console.WriteLine("RESULT: PLAYER B GOT 1 POINT!");
-                        countB++;
-                    }
-                    else if (shapeB == "r" || shapeB == "sp")
-                    {
-                        Console.WriteLine("RESULT: PLAYER A GOT 1 POINT!");
-                        countA++;
-                    }
-                    else
-                    {
-                        Console.WriteLine("RESULT: DRAW!");
-                    }
+                        case "s":
+                        case "l":
+                            Console.WriteLine("RESULT: PLAYER B GOT 1 POINT!");
+                            countB++;
+                            break;
+                        case "r":
+                        case "sp":
+                            Console.WriteLine("RESULT: PLAYER B GOT 1 POINT!");
+                            countA++;
+                            break;
+                        default:
+                            Console.WriteLine("RESULT: DRAW!");
+                            break;
+                     }
                 }
 
                 else if (shapeA == "s")
                 {
-                    if (shapeB == "r" || shapeB == "sp")
-                    {
-                        Console.WriteLine("RESULT: PLAYER B GOT 1 POINT!");
-                        countB++;
-                    }
-                    else if (shapeB == "p" || shapeB == "l")
-                    {
-                        Console.WriteLine("RESULT: PLAYER A GOT 1 POINT!");
-                        countA++;
-                    }
-                    else
-                    {
-                        Console.WriteLine("RESULT: DRAW!");
-                    }
+                    switch (shapeB)
+                     {
+                        case "r":
+                        case "sp":
+                            Console.WriteLine("RESULT: PLAYER B GOT 1 POINT!");
+                            countB++;
+                            break;
+                        case "p":
+                        case "l":
+                            Console.WriteLine("RESULT: PLAYER B GOT 1 POINT!");
+                            countA++;
+                            break;
+                        default:
+                            Console.WriteLine("RESULT: DRAW!");
+                            break;
+                     }
                 }
 
 
                 else if (shapeA == "l")
                 {
-                    if (shapeB == "r" || shapeB == "sp")
-                    {
-                        Console.WriteLine("RESULT: PLAYER B GOT 1 POINT!");
-                        countB++;
-                    }
-                    else if (shapeB == "p" || shapeB == "s")
-                    {
-                        Console.WriteLine("RESULT: PLAYER A GOT 1 POINT!");
-                        countA++;
-                    }
-                    else
-                    {
-                        Console.WriteLine("RESULT: DRAW!");
-                    }
-
+                    switch (shapeB)
+                     {
+                        case "r":
+                        case "sp":
+                            Console.WriteLine("RESULT: PLAYER B GOT 1 POINT!");
+                            countB++;
+                            break;
+                        case "p":
+                        case "s":
+                            Console.WriteLine("RESULT: PLAYER B GOT 1 POINT!");
+                            countA++;
+                            break;
+                        default:
+                            Console.WriteLine("RESULT: DRAW!");
+                            break;
+                     }
                 }
 
                 else if (shapeA == "sp")
                 {
-                    if (shapeB == "l" || shapeB == "p")
-                    {
-                        Console.WriteLine("RESULT: PLAYER B GOT 1 POINT!");
-                        countB++;
-                    }
-                    else if (shapeB == "r" || shapeB == "s")
-                    {
-                        Console.WriteLine("RESULT: PLAYER A GOT 1 POINT!");
-                        countA++;
-                    }
-                    else
-                    {
-                        Console.WriteLine("RESULT: DRAW!");
-                    }
+                    switch (shapeB)
+                     {
+                        case "l":
+                        case "p":
+                            Console.WriteLine("RESULT: PLAYER B GOT 1 POINT!");
+                            countB++;
+                            break;
+                        case "r":
+                        case "s":
+                            Console.WriteLine("RESULT: PLAYER B GOT 1 POINT!");
+                            countA++;
+                            break;
+                        default:
+                            Console.WriteLine("RESULT: DRAW!");
+                            break;
+                     }
                 }
                 Console.WriteLine("\nCUMMULATIVE SCORE: PLAYER A = " + countA + ", PLAYER B = " + countB);
             }
-
+           
 
 
             if (countA > countB)
