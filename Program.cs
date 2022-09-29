@@ -121,12 +121,12 @@ namespace Game
 
                 else if (shapeA == "l")
                 {
-                    if (shapeB == "r" || shapeB == "sp")
+                    if (shapeB == "r" || shapeB == "s")
                     {
                         Console.WriteLine("RESULT: PLAYER B GOT 1 POINT!");
                         countB++;
                     }
-                    else if (shapeB == "p" || shapeB == "s")
+                    else if (shapeB == "p" || shapeB == "sp")
                     {
                         Console.WriteLine("RESULT: PLAYER A GOT 1 POINT!");
                         countA++;
