@@ -75,7 +75,7 @@ namespace Game
                             break;
                         case "s":
                         case "l":
-                            Console.WriteLine("RESULT: PLAYER B GOT 1 POINT!");
+                            Console.WriteLine("RESULT: PLAYER A GOT 1 POINT!");
                             countA++;
                             break;
                         default:
@@ -95,7 +95,7 @@ namespace Game
                             break;
                         case "r":
                         case "sp":
-                            Console.WriteLine("RESULT: PLAYER B GOT 1 POINT!");
+                            Console.WriteLine("RESULT: PLAYER A GOT 1 POINT!");
                             countA++;
                             break;
                         default:
@@ -115,7 +115,7 @@ namespace Game
                             break;
                         case "p":
                         case "l":
-                            Console.WriteLine("RESULT: PLAYER B GOT 1 POINT!");
+                            Console.WriteLine("RESULT: PLAYER A GOT 1 POINT!");
                             countA++;
                             break;
                         default:
@@ -136,7 +136,7 @@ namespace Game
                             break;
                         case "p":
                         case "s":
-                            Console.WriteLine("RESULT: PLAYER B GOT 1 POINT!");
+                            Console.WriteLine("RESULT: PLAYER A GOT 1 POINT!");
                             countA++;
                             break;
                         default:
@@ -156,7 +156,7 @@ namespace Game
                             break;
                         case "r":
                         case "s":
-                            Console.WriteLine("RESULT: PLAYER B GOT 1 POINT!");
+                            Console.WriteLine("RESULT: PLAYER A GOT 1 POINT!");
                             countA++;
                             break;
                         default:
